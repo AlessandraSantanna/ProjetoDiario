@@ -1,10 +1,13 @@
 body {
       font-family: Arial, sans-serif;
-      background: #f9f9f9;
+       font-family: "Merienda", cursive;
       margin: 0;
       padding: 0;
-      color: #1f2937;
-      background-color:pink;
+      color: white;
+      background-image: url("./img/logo.jpg"); /* Substitua pelo caminho da sua imagem */
+      background-repeat: no-repeat;
+      background-size: cover;
+      Background-position:center center;
     }
 
     header {
@@ -15,43 +18,47 @@ body {
 
     header h1 {
       font-size: 2.5rem;
-      color: #1f2937;
+      color: white;
       margin: 0;
     }
 
     header p {
       font-size: 1rem;
-      color: #6b7280;
+      color:rgb(230, 133, 217);
       margin-top: 5px;
     }
 
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 40px 20px;
+   .container {
+      max-width: 550px;
+      margin: 0 100px;
+     // padding: 40px 20px;
+     color:black;
+      
     }
 
-   /* h2 {
+    h2 {
       font-size: 1.8rem;
       margin-bottom: 30px;
       text-align: center;
-      color: #1f2937;
-    }*/
+      color: white;
+    }
 
     .date {
-      background: white;
+      background: rgba(165, 94, 167, 0.43);
       padding: 20px 25px;
       margin-bottom: 30px;
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
       position: relative;
+      color:#fff;
+      
     }
-    /*.entry-date {
+    .entry-date {
       position: absolute;
       top: 20px;
       right: 25px;
-      background: #f3f4f6;
-      color: #4b5563;
+      background:rgb(183, 120, 185);
+      color:#000;
       font-weight: bold;
       font-size: 0.9rem;
       padding: 6px 14px;
@@ -71,17 +78,84 @@ body {
     }
 
     .tag {
-      margin-top: 15px;
+    
       display: inline-block;
-      background: blue;
-      color: white;
+      background:rgb(183, 120, 185);;
+      color: #000;
       font-size: 0.9rem;
       font-weight: 600;
-      padding: 6px 14px;
+      padding: 6px 190px;
       border-radius: 999px;
+      display: flex;          
+      justify-content: center;
+      align-items: center; 
     }
 
-    .tag span {
-      margin-right: 6px;
-    }*/
+    
+footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(164, 94, 167, 0.32);
+      color: #fff;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+        font-weight: 900;
+    }
 
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    } 
+.repositorio {
+  text-align: end;
+  margin: 30px;
+}
+
+.repositorio a {
+  display: inline-block;
+  background: #6c3483;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.repositorio a:hover {
+  background: #512e5f;
+}
+
+
+@media (max-width: 600px) {
+  body {
+    background-size:  800px 2000px; /* largura 200px, altura automática */
+    background-position: top center;
+  }
+
+  .container {
+    max-width: 100%;
+    margin: 0 10px;
+  }
+
+  .date {
+    padding: 12px 5px;
+  }
+
+  .tag {
+    padding: 6px 20px;
+    font-size: 0.85rem;
+  }
+
+  .repositorio {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .repositorio a {
+    padding: 10px 16px;
+    font-size: 0.95rem;
+  }
+}
